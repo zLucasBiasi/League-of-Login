@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #040210;
+}
+
+.containerLogin {
+  width: 80vw;
+  height: 90vh;
+  display: flex;
+  background-image: url(./assets/dark-cosmic-jhin-splash-art-lol-4K-87.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.containerForm {
+  background-color: white;
+  height: 100%;
+  width: 30%;
+  position: relative;
+  padding: 30px;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.logoLocation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -10px;
+}
+
+.Location {
+  display: flex;
+  align-items: center;
+}
+
+.Location h1 {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.Location img {
+  cursor: pointer;
+  width: 20px;
+  margin-left: 5px;
+}
+
+.allForm h1 {
+  margin: 20px 0 35px 0;
+}
+
+.allForm input[type="email"],
+.allForm input[type="password"] {
+  width: 100%;
+  height: 45px;
+  margin-bottom: 15px;
+  background-color: #e3e3e3;
+  border: none;
+  padding: 10px;
+}
+
+.allForm input:focus {
+  outline: 0;
+}
+
+.allForm input::placeholder {
+  font-weight: 600;
+  font-size: 10px;
+}
+
+.staysign {
+  margin-top: -15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.staysign h2 {
+  font-size: 10px;
+  color: #9e9e9e;
+  margin-left: 25px;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  cursor: pointer;
+  top: 2px;
+}
+
+input[type="checkbox"]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  background-color: #e9e9e9;
+}
+
+input[type="checkbox"]:checked:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  background-color: #090c18;
+}
+
+input[type="checkbox"]:checked:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 2px;
+  left: 6px;
+}
+
+.arrow {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.loginArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #e3e3e3;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.loginArrow a {
+  color: #e3e3e3;
+}
+
+.loginArrow:hover {
+  background-color: #090c18;
+  border: none;
+}
+
+.create {
+  display: flex;
+  flex-direction: column;
+
+  bottom: 25px;
+  position: absolute;
+}
+
+.create a {
+  color: #9e9e9e;
+  font-size: 11px;
+  margin-bottom: 3px;
+  font-weight: 600;
+}
+
+.create a:hover {
+  color: #090c18;
+}
+
+.containerJhin {
+  position: relative;
+}
+.errorAnimation {
+  padding: 20px;
+}
+
+.errorAnimation img {
+  width: 40px;
+}
+
+.Box {
+  width: 250px;
+  height: 150px;
+  background-color: #090c18;
+  text-align: center;
+  display: none;
+}
+
+.Box h1,
+p {
+  color: white;
+}
+.Box h1 {
+  font-size: 1.3rem;
+  padding: 20px;
+}
+
+select {
+  border-radius: 5px 0 0 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: white;
+  border: none;
+  background-color: #090c18;
+}
+select:focus,
+option:focus {
+  outline: 0;
+}
+option {
+  border: none;
+  color: white;
+  background-color: #090c18;
+}
